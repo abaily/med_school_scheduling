@@ -5,4 +5,4 @@ This CSV will need the school names in the 1st column, acceptance to the intervi
 
 To use the notebook, click the "open in colab" button, which will launch the notebook in google colab. 
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/googlecolab/colabtools/blob/master/notebooks/colab-github-demo.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/abaily/med_school_scheduling/blob/main/scheduler.ipynb)
