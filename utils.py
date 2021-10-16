@@ -1,16 +1,19 @@
 import numpy as np
 from typing import List
 
+NUM_ROWS_NOT_DATES = 3
+
 def parse_school_array(school_array):
     school_list = []
     prio_list = []
     date_list = []
     for row in school_array:
-        prio_list.append(row[1])
-        school_list.append(row[0])
-        for date in range(len(row)-2):
-            if len(row[date+2]) > 2:
-                date_list.append(row[date+2])
+        if row[1]:
+            prio_list.append(row[2])
+            school_list.append(row[0])
+            for date in range(len(row)-NUM_ROWS_NOT_DATES):
+                if len(row[date+NUM_ROWS_NOT_DATES]) > 2:
+                    date_list.append(row[date+NUM_ROWS_NOT_DATES])
 
     return np.array(school_list), date_list, np.array(prio_list)
 
